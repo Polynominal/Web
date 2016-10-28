@@ -1,64 +1,89 @@
-<!DOCTYPE html>
+<DOCTYPE !html>
 <html>
-	<head>
-		<title>HTML  test</title>
-		<meta http-equiv = "Content-Type",content = "text/html"; charset=utf8"/>
-	</head>
-	<body>
-		<h1> More on clowns </h1>
-		<p>Read some clown tips <a href="#Q">here</a></p>
-		<p>Ever met a clown. Not? Well they look like this:</p>
-		<figure>
-			<img src = "assets/images/clown_face.jpg", width = "350", height = "235",
-			alt= "An inside look into a clown and how he does what he calls Fun"/>
-			<figcaption>
-				Inside one of the minds of these 'clowns'.
-			</figcaption>
-		</figure>
-		<figure>
-			<img src = "assets/images/clown2.jpg",width = "400",height = "268",
-			alt= "This clown in particular was caught off guard, you can see his weapons of choice behind him."/>
-			<figcaption>
-				Clowns can sometimes let their guard down. This rare picture of a clown proves that clowns are indeed an offset in the human species.
-			</figcaption>
-		</figure>
-		<figure>
-			<img src = "assets/images/clown3.jpg", width = "640",height = "462",
-			alt= "This clown is suspicious of you. Pro tip: Run"/>
-			<figcaption>
-				Sometimes the clowns like to take an intimate look at their audience to make sure everything is in order.
-			</figcaption>
-		</figure>
-  <section>
-		<h2> Here are some quotes you should read</h2>
-		<ul class="quotations" id = "Q">
-			<li><blockquote><p>If you dont pursue a lawsuit it didnt happen!</p></blockquote></li>
-			<li><blockquote><p>There are only two types of clowns - ones who kill you and the ones who entertain you to death.</p></blockquote></li>
-			<li><blockquote><p>If you can't find a clown consider yourself lucky. He just found you.</p></blockquote></li>
-		</ul>
-	</section>
-	<h2> Contact with clowns</h2>
-	<p>If you have been in contact with clowns for an extended period of time you may need to seek
-	medical attention. Here are a few things you can do while the paramedics are on their way.</p>
-	<ol>
-		<li>Find a set of headphones<ul>
-			<p>Clowns can make you laugh to death so its a good idea if you can find any of these:</p>
-			<li> Construction headphones </li>
-			<li> a large pot. put it on your head. </li>
-			<li> Use bits of the carpet to form cotton buds.</li>
-			<p>It is well known in the anti-clown society that all clowns are capable of imense damage
-			sheerly by the power of their jokes. They are infinite in both their count and quality.
-			tales tell of a clown who was born in 1887 and tells fresh jokes to this day.</p>
-		</ul></li>
-		<li>
-			Find deflated baloons
-			<p>Deflated baloons are a great source of distraction so while the clown is distracted do the following: </p>
-			<ol>
-				<li>Find more ballons</li>
-				<li>Seek a fire exit or a fire extinguisher</li>
-				<li>Call the police</li>
-			</ol>
-		</li>
-	</ol>
-	</body>
+<head>
+</head>
+<body>
+	<h1>Storing graphics</h1>
+	<p>
+		If you were tasked to help someone draw a shape that they want and the only thing you could
+		do is speak in numbers, how would you communicate?
+		<br>
+		Should you tell them the angles of the different sides of the square? Should you tell them the
+		radius of the circle? How would they know what each number is for?
+		Then what about size and color of the object? And.. and more.
+	</p>
+	<p>
+		There is a very convinient way of doing this, the most easiest way. 
+		<br>
+		to tell the other person the points he must draw, but wait. 
+		What about how big the shape should be? What if he isn't drawing on a A4 but A5 paper?
+		We solve this issue by telling them the percentages of the paper that our shape takes up,
+		in other words the relative possitons of each of the points
+		But there is yet another issue, we are producing a square from the top of the page so lets make its center the middle
+		we do this to remind ourselves where the center is.
+	</p>
+	<h2 class = "Show"> Our page now looks like this: </p>
+	<img src = "assets/images/maths/screen.png"></img>
+	<h2> Assumptions, assumptions. </h2>
+	<p>
+		Now that we have defined how we will describe our shape we can start to actualy describe it.
+		lets take a look:
+	</p>
+	<table>
+		<tr>
+		<th> X </th>
+		<th> Y </th>
+		<th> Z </th>
+		<th> Steps </th>
+		</tr>
+		<tr>
+			<td>0.5</td>
+			<td>0.5</td>
+			<td>0.0</td>
+			<td>#</td>
+		</tr>
+		<tr>
+			<td>-0.5</td>
+			<td>0.5</td>
+			<td>0.0</td>
+			<td>#------#</td>
+		</tr>
+		<tr>
+			<td>-0.5</td>
+			<td>-0.5</td>
+			<td>0.0</td>
+			<td>
+				#------#<br>
+				|       <br>
+				|       <br>
+				|       <br>
+				#
+			</td>
+		</tr>
+		<tr>
+			<td>0.5</td>
+			<td>-0.5</td>
+			<td>0.0</td>
+			<td>
+				#------#<br>
+				|       <br>
+				|       <br>
+				|       <br>
+				#------#
+			</td>
+		</tr>
+		<tr>
+			<td>0.5</td>
+			<td>-0.5</td>
+			<td>0.0</td>
+			<td>
+				#------#<br>
+				|&emsp |<br>
+				|&emsp |<br>
+				|&emsp |<br>
+				#------#
+			</td>
+		</tr>
+	</table>
+</body>
 </html>
